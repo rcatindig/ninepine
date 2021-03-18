@@ -1,0 +1,7 @@
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^api/vehicles?$ index.php [NC,L]
+RewriteRule ^api/vehicles/([0-9]+)/?$ index.php?id=$1 [NC,L]
+
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET,PUT,POST,DELETE"
+Header set Access-Control-Allow-Headers "Content-Type, Authorization"

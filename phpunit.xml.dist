@@ -1,0 +1,13 @@
+<phpunit bootstrap="./tests/bootstrap.php"
+         verbose="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true">
+         
+
+    <testsuites>
+        <testsuite name="persistence">
+            <directory>./tests/Persistence</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
